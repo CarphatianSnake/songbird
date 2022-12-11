@@ -6,7 +6,7 @@
   "scripts": {
     "start": "webpack serve",
     "dev": "webpack",
-    "build": "webpack --node-env=production",
+    "publish": "webpack --node-env=production",
     "clear": "rd /s /q dist"
   },
   "repository": {
