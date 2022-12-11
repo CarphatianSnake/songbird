@@ -1,0 +1,62 @@
+.btn {
+  display: block;
+  background-color: $btn-color;
+  border: 0;
+  cursor: pointer;
+  border-radius: .25rem;
+  text-align: center;
+  font-size: 1.5rem;
+  color: $color;
+  box-shadow: 2px 5px 5px 2px rgba(0, 0, 0, 0.15);
+  transition: $bg-color-out, $transform-out, $color-out;
+
+  &:hover, &:disabled {
+    background-color: $btn-hover-color;
+    transition: $bg-color-in, $transform-in, $color-in;
+  }
+
+  &_play {
+    max-width: 400px;
+    width: 80%;
+    margin: auto;
+    padding: .75rem;
+    line-height: 1.15;
+    box-shadow: 3px 10px 10px 3px rgba(0, 0, 0, 0.7);
+
+    &:hover {
+      transform: scale(1.02);
+    }
+
+    @media #{$extra-small} {
+      font-size: 1.2rem;
+      padding: .75rem;
+    }
+
+  }
+
+  &_next {
+    width: 100%;
+    margin-top: 25px;
+    padding: .75rem;
+    flex-shrink: 0;
+    order: 3;
+    border: 1px solid #444;
+    font-size: 1rem;
+    box-shadow: none;
+
+    &:disabled {
+      background-color: $quiz-background;
+    }
+  }
+
+  &_results {
+    width: 100%;
+    padding: 1rem;
+    margin: 1.5rem auto;
+
+    &:hover {
+      transform: scale(1.01);
+    }
+  }
+
+}

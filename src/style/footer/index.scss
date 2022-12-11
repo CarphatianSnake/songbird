@@ -1,0 +1,52 @@
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-shrink: 0;
+  height: 50px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+
+  &__github-link {
+    color: $color;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    transition: $transform-out, $color-out;
+
+    &:hover {
+      color: $link-hover;
+      transform: scale(1.04);
+      transition: $transform-in, $color-in;
+    }
+
+    &__logo {
+      fill: currentColor;
+    }
+
+    &__name {
+      margin-left: .5rem;
+    }
+
+  }
+
+  &__rs-logo {
+    background: no-repeat url('img/rs_school_js.svg');
+    background-size: contain;
+    height: 34px;
+    width: 80px;
+    transition: $transform-out;
+
+    &:hover {
+      transform: scale(1.1);
+      transition: $transform-in;
+    }
+
+    @media #{$extra-small} {
+      height: 24px;
+      width: 60px;
+    }
+
+  }
+
+}

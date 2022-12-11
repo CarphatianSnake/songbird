@@ -1,0 +1,29 @@
+$background: #222;
+$color: #fff;
+$hover-color: rgba(0, 0, 0, 0.6);
+$link-hover: rgba(0, 188, 140, 0.7);
+$btn-color: #00bc8c;
+$btn-hover-color: #00efb2;
+$quiz-background: #303030;
+$border: 1px solid #555;
+$gray: #808080;
+
+$xl: 1100px;
+$x-large: 'screen and (min-width: 1200px)';
+$lg: 920px;
+$large: 'screen and (min-width: 992px)';
+$md: 720px;
+$medium: 'screen and (min-width: 768px)';
+$sm: 540px;
+$small: 'screen and (min-width: 576px)';
+$extra-small: 'screen and (max-width: 479px)';
+
+$in: .3s ease-in;
+$out: .3s ease-in-out;
+
+$transform-in: transform $in;
+$transform-out: transform $out;
+$bg-color-in: background-color $in;
+$bg-color-out: background-color $out;
+$color-in: color $in;
+$color-out: color $out;
